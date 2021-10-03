@@ -51,6 +51,7 @@ namespace labGUI1_2
             this.button_clear.Size = new System.Drawing.Size(45, 44);
             this.button_clear.TabIndex = 16;
             this.button_clear.UseVisualStyleBackColor = false;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
             // 
             // task
             // 
@@ -72,12 +73,11 @@ namespace labGUI1_2
             this.label_answer.AutoSize = true;
             this.label_answer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_answer.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label_answer.Location = new System.Drawing.Point(98, 283);
-            this.label_answer.MaximumSize = new System.Drawing.Size(280, 50);
+            this.label_answer.Location = new System.Drawing.Point(98, 274);
+            this.label_answer.MaximumSize = new System.Drawing.Size(280, 100);
             this.label_answer.Name = "label_answer";
-            this.label_answer.Size = new System.Drawing.Size(73, 20);
+            this.label_answer.Size = new System.Drawing.Size(2, 20);
             this.label_answer.TabIndex = 14;
-            this.label_answer.Text = "Ответ: ";
             this.label_answer.Visible = false;
             // 
             // label1
@@ -130,13 +130,14 @@ namespace labGUI1_2
             this.label2.Size = new System.Drawing.Size(264, 18);
             this.label2.TabIndex = 18;
             this.label2.Text = "Количество соседних цифр:\r\n";
+            this.label2.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(590, 319);
+            this.ClientSize = new System.Drawing.Size(590, 333);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numericUpDown);
             this.Controls.Add(this.button_clear);
