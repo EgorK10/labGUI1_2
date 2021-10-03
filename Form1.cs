@@ -47,5 +47,18 @@ namespace labGUI1_2
             numericUpDown.Visible = false;
             label2.Visible = false;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Nums.Text = Properties.Settings.Default.nums;
+            numericUpDown.Value = Properties.Settings.Default.numericUpDown;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.nums = Nums.Text;
+            Properties.Settings.Default.numericUpDown = numericUpDown.Value;
+            Properties.Settings.Default.Save();
+        }
     }
 }

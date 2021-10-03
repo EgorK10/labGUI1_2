@@ -105,7 +105,7 @@ namespace labGUI1_2
             // 
             this.numericUpDown.Location = new System.Drawing.Point(277, 225);
             this.numericUpDown.Minimum = new decimal(new int[] {
-            2,
+            1,
             0,
             0,
             0});
@@ -151,6 +151,8 @@ namespace labGUI1_2
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
