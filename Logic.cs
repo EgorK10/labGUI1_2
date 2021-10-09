@@ -2,7 +2,7 @@
 
 namespace labGUI1_2
 {
-    class Logic
+     public class Logic
     {
         public static string Solution(string str, uint n)
         {

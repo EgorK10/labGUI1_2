@@ -145,7 +145,7 @@ namespace labGUI1_2
             this.Controls.Add(this.label_answer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Nums);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
